@@ -1,3 +1,6 @@
-number = int(input("Enter a number\n"))
-for value in range(10):
-    print(f"{number} x {value} = {number * value}")
+
+value = int(input("Enter a number "))
+
+
+for num in range(10):
+	print(f"{num} x {value} = {num * value}")
