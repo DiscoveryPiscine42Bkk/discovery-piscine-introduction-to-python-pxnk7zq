@@ -1,11 +1,8 @@
 import sys
-
-if len(sys.argv) != 2:
+if len(sys.argv) == 1:
     print("none")
 else:
-    input_str = sys.argv[1]
-    z_conut = input_str.count('z')
-    if z_count == 0:
-        print("none")
-    else:
-        print("z" * z_count)        
+    param_count = len(sys.argv) - 1
+    print(f"parameters: {param_count}")
+    for param in sys.argv[1:]:
+        print(f"{param} {len(param)}")  
